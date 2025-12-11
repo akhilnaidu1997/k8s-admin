@@ -15,3 +15,7 @@ data:
       - roboshop-trainee
       userarn: arn:aws:iam::799345568171:user/suresh
       username: suresh
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
