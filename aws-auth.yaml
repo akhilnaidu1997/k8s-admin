@@ -6,7 +6,7 @@ data:
       - system:bootstrappers
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: |
+  mapUsers: | # this block is added and made changes as per our requirement.
     - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::799345568171:user/suresh
