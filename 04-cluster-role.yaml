@@ -4,9 +4,9 @@ metadata:
   # "namespace" omitted since ClusterRoles are not namespaced
   name: roboshop-admin
 rules:
-- apiGroups: [""]
+- apiGroups: ["storage.k8s.io"]
   #
   # at the HTTP level, the name of the resource for accessing Secret
   # objects is "secrets"
-  resources: ["StorageClass","persistentvolumes"]
+  resources: ["storageclasses","persistentvolumes"]
   verbs: ["get", "watch", "list"]
