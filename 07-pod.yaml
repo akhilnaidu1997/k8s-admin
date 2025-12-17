@@ -5,7 +5,6 @@ metadata:
 spec:
   serviceAccountName: sa
   containers:
-  - name: nginx-sa
-    image: nginx
-    ports:
-    - containerPort: 80
+  - name: cli-sa
+    image: amazon/aws-cli
+    command: ["sleep","10000"]
